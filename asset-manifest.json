@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/3DHouse/static/css/main.0c0fd41d.chunk.css",
+    "main.js": "/3DHouse/static/js/main.bb376737.chunk.js",
+    "main.js.map": "/3DHouse/static/js/main.bb376737.chunk.js.map",
+    "runtime-main.js": "/3DHouse/static/js/runtime-main.861e0737.js",
+    "runtime-main.js.map": "/3DHouse/static/js/runtime-main.861e0737.js.map",
+    "static/js/2.06098fec.chunk.js": "/3DHouse/static/js/2.06098fec.chunk.js",
+    "static/js/2.06098fec.chunk.js.map": "/3DHouse/static/js/2.06098fec.chunk.js.map",
+    "index.html": "/3DHouse/index.html",
+    "precache-manifest.3f471b9581011adbcabb8a05d3670daf.js": "/3DHouse/precache-manifest.3f471b9581011adbcabb8a05d3670daf.js",
+    "service-worker.js": "/3DHouse/service-worker.js",
+    "static/css/main.0c0fd41d.chunk.css.map": "/3DHouse/static/css/main.0c0fd41d.chunk.css.map",
+    "static/js/2.06098fec.chunk.js.LICENSE.txt": "/3DHouse/static/js/2.06098fec.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.861e0737.js",
+    "static/js/2.06098fec.chunk.js",
+    "static/css/main.0c0fd41d.chunk.css",
+    "static/js/main.bb376737.chunk.js"
+  ]
+}
