@@ -1,29 +1,29 @@
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import ReactDOM from "react-dom";
-import React, { useRef, useState, useEffect, useMemo, Suspense } from "react";
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import ReactDOM from 'react-dom';
+import React, { useRef, useState, useEffect, useMemo, Suspense } from 'react';
 import {
   Canvas,
   useFrame,
   extend,
   useThree,
   useUpdate,
-  useLoader
-} from "react-three-fiber";
-import { TextureLoader } from "three/src/loaders/TextureLoader.js";
+  useLoader,
+} from 'react-three-fiber';
+import { TextureLoader } from 'three/src/loaders/TextureLoader.js';
 import {
   sRGBEncoding,
   Shape,
   RepeatWrapping,
   ACESFilmicToneMapping,
-  VSMShadowMap
-} from "three";
+  VSMShadowMap,
+} from 'three';
 
-import "./index.css";
+import './index.css';
 
-import Ground from "./components/Ground";
-import Roof from "./components/Roof";
-import Sky from "./components/Sky";
-import Rdc from "./containers/Rdc";
+import Ground from './components/Ground';
+import Roof from './components/Roof';
+import Sky from './components/Sky';
+import Rdc from './containers/Rdc';
 
 extend({ OrbitControls });
 
@@ -37,7 +37,7 @@ const Controls = props => {
 };
 
 const Rooms = props => {
-  const texture = useLoader(TextureLoader, "/assets/textures/22_clay.jpg");
+  const texture = useLoader(TextureLoader, './assets/textures/22_clay.jpg');
 
   useEffect(() => {
     texture.wrapS = texture.wrapT = RepeatWrapping;
@@ -106,12 +106,12 @@ window.searchRoot = ReactDOM.render(
     camera={{
       position: [10, 10, 40],
       fov: 25,
-      aspect: window.innerWidth / window.innerHeight
+      aspect: window.innerWidth / window.innerHeight,
     }}
     pixelRatio={window.pixelRatio}
     onCreated={({ scene, gl }) => {
       //scene.fog = new Fog(0xcce0ff, 50, 100);
-      scene.name = "Main";
+      scene.name = 'Main';
       gl.outputEncoding = sRGBEncoding;
       gl.antialias = true;
       //gl.shadowType = VSMShadowMap;
@@ -133,11 +133,11 @@ window.searchRoot = ReactDOM.render(
     />
     <Sky />
 
-    <Suspense fallback={"Chargement ..."}>
+    <Suspense fallback={'Chargement ...'}>
       <Rooms />
       <Controls enableDamping rotateSpeed={0.3} dampingFactor={0.1} />
       <Ground />
     </Suspense>
   </Canvas>,
-  document.getElementById("root")
+  document.getElementById('root'),
 );
